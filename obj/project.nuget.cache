@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lre2VS12JLDfDEx932L5BU+ZzRust/g5H1/CFoQuYQWXP+NaonDK9yTQaNU3wG8+PMSdWg+ptp7H6cLPziVDnA==",
+  "success": true,
+  "projectFilePath": "D:\\C_Sharp_Projects\\repos\\WeatherApp\\WeatherApp\\WeatherApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\hp\\.nuget\\packages\\flurl\\4.0.0\\flurl.4.0.0.nupkg.sha512",
+    "C:\\Users\\hp\\.nuget\\packages\\flurl.http\\4.0.0\\flurl.http.4.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

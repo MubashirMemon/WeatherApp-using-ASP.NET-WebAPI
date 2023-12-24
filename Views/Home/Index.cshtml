@@ -1,0 +1,29 @@
+﻿@model WeatherModel;
+@{
+    ViewData["Title"] = "HomePage";
+}
+
+<div class="text-center">
+    <h1 class="display-12"> Welcome to Weather API Web Application</h1>
+    <form asp-controller="Home" asp-action="GetWeatherDetails" method="post">
+        <div>
+            <input type="text" name="location" required />
+            <input type="Submit" value="Submit"/>
+        </div>
+    </form>
+    <br />
+    <br /> 
+    @if(Model!= null)
+    {
+        <h5> City : @Model.location.name</h5> <br/>
+        <h5> Country : @Model.location.region @Model.location.country</h5> <br /> 
+        <h5> Time : @Model.location.region  @Model.location.localtime</h5> <br />
+        <h5> Temperature : @Model.current.temperature</h5> <br />
+        <h5> Weather Descriptions : @Model.current.weather_descriptions[0].ToString(); </h5>
+    }
+    else if (ViewData.ContainsKey("IsFormSubmitted") && (bool)ViewData["IsFormSubmitted"])
+      {
+            <p>@ViewData["Message"]</p>
+        }
+</div>
+}
